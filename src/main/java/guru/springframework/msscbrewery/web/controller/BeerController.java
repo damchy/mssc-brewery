@@ -13,7 +13,8 @@ import java.util.UUID;
 @RequestMapping("/api/v1/beer")
 @RestController
 public class BeerController {
-    private final BeerService beerService;
+
+    private BeerService beerService;
 
     public BeerController(BeerService beerService) {
         this.beerService = beerService;
